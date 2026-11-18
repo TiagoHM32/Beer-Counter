@@ -1,30 +1,36 @@
 body {
     background-image: url("beer.png");
     background-size: cover;
+    background-position: center; 
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center; 
     align-items: center;     
-    height: 100vh;
+    
+    margin: 0;
+    height: 100dvh;
+    overflow: hidden; 
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    max-width: 80%;
-    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    width: 90%;         
+    max-width: 500px;    
+    box-sizing: border-box; 
+    
     border-radius: 10px;
-    padding: 5vw;
-    backdrop-filter: blur(5px);
+    padding: 30px 20px; 
 }
 
 .botoes-container {
   display: flex;
-  justify-content: center; /* Centra os botões horizontalmente */
-  gap: 15px;               /* Cria espaço automático entre o botão A e o botão B */
-  margin-top: 20px;        /* Afasta um pouco os botões do texto/título de cima */
+  justify-content: center; 
+  gap: 15px;               
+  margin-top: 20px;        
   flex-wrap: wrap;
 }
 
