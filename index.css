@@ -1,0 +1,85 @@
+body {
+    background-image: url("beer.png");
+    background-size: cover;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5vw;
+    backdrop-filter: blur(5px);
+}
+
+.botoes-container {
+  display: flex;
+  justify-content: center; /* Centra os botões horizontalmente */
+  gap: 15px;               /* Cria espaço automático entre o botão A e o botão B */
+  margin-top: 20px;        /* Afasta um pouco os botões do texto/título de cima */
+  flex-wrap: wrap;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#increment-btn {
+    background-color: #bc8401;
+    border-color: #bc8401;
+}
+
+#increment-btn:hover{
+    background-color: #b79036;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+#save-btn {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+#save-btn:hover{
+    background-color: #4d4d4d;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+#save-el {
+    font-weight: bold;
+}
+
+p {
+    margin-top: 40px;
+    color:white;
+    word-break: break-word;
+}
